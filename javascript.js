@@ -197,3 +197,32 @@
 //   [7],
 //   [8],
 // ]));
+
+
+/*------------ROTATED MATRIX---------------
+-----------------------------------------*/
+
+
+// var rotateMatrix = function(matrix) {
+//   var copy = matrix.slice(0);
+//   var arr = [];
+//   if (copy[0]) {
+//     for (var i = 0; i < copy.length; i++) {
+//       var newRow = [];
+//       for (var j = copy.length - 1; j >= 0; j--) {
+//         newRow.push(copy[j][i]);
+//       }
+//       arr.push(newRow);
+//     }
+//   }
+//   return arr;
+// };
+
+
+// var matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+
+// console.log(rotateMatrix(matrix));

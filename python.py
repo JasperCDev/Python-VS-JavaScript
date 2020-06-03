@@ -175,3 +175,28 @@
 #   [7],
 #   [8],
 # ]));
+
+
+#------------ROTATED MATRIX----------------
+#------------------------------------------
+
+
+# def rotateMatrix(matrix):
+#   copy = matrix.copy()
+#   list = []
+#   if copy[0]:
+#     for i in range(0, len(copy)):
+#       newRow = []
+#       for j in range(len(copy) - 1, -1, -1):
+#         newRow.append(copy[j][i])
+#       list.append(newRow)
+#   return list
+
+
+# matrix = [
+#   [1, 2, 3],
+#   [4, 5, 6],
+#   [7, 8, 9]
+# ]
+
+# print(rotateMatrix(matrix));
