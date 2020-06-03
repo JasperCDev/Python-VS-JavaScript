@@ -1,6 +1,4 @@
 
-
-
 /*--------------- JAVASCRIPT DATA TYPES ---------------
 ------------------------------------------------------ */
 
@@ -61,6 +59,15 @@
 // }
 
 
+
+//----------------INLINE CONDITIONAL------------------------
+
+// var boolean = false
+
+// var inline = boolean ? 'true' : 'false'
+// console.log(inline)
+
+
 /* ------------------ JAVASCRIPT FOR LOOPS ---------------
 ----------------------------------------------------------*/
 
@@ -77,11 +84,20 @@
 //   console.log(i);
 // }
 
+////////////////////////////////////////
+// var i = 0
+
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// console.log(i);
 
 /*-------------JAVASCRIPT FUNCTIONS-------------------------
 ----------------------------------------------------------*/
 
-
+///////////////////////
 // function add(a, b) {
 //   return a + b;
 // }
@@ -89,9 +105,17 @@
 // console.log(add(1, 2));
 
 
+//////////////////////////////////////////
+// anonymous = function(x) {return x * 2};
+// console.log(anonymous(1));
+
+///////////////////////
+// arrow = (x) => x * 2
+// console.log(arrow(1))
+
+
 /*-------------ROCK PAPER SCISSORS EXAMPLE------------------
 ----------------------------------------------------------*/
-
 
 // function rockPaperScissors(n) {
 //   var permutations = [];
@@ -111,3 +135,65 @@
 
 
 // console.log(rockPaperScissors(3));
+
+
+/*-------------SPIRAL TRAVERSAL-----------------------------
+----------------------------------------------------------*/
+
+// var spiralTraversal = function(matrix) {
+//   var copy = matrix.slice(0);
+
+//   var arr = [];
+
+//   if (copy[0]) {
+
+//     arr = arr.concat(copy[0]);
+
+//     copy.shift();
+
+//     copy.forEach(row => {
+//       arr.push(row[row.length - 1]);
+//       row.pop();
+//     });
+//     if (copy[0]) {
+//       for (var i = copy[0].length - 1; i >= 0; i--) arr.push(copy[copy.length - 1][i]);
+
+//       copy.pop();
+
+//       for (var i = copy.length - 1; i >= 0; i--) {
+//         if (copy[i][0]) {
+//           arr.push(copy[i][0]);
+//           copy[i].shift();
+//         }
+//       };
+//     }
+//   }
+
+//   if (!arr.length || !arr[0]) return [];
+
+//   return (
+//     copy.length > 1
+//     ?
+//     arr.concat(spiralTraversal(copy))
+//     :
+//     arr.concat(copy[0] || [])
+//   );
+// };
+
+// console.log(spiralTraversal([
+//   [ 1, 2, 3, 4],
+//   [ 5, 6, 7, 8],
+//   [ 9,10,11,12],
+//   [13,14,15,16],
+// ]));
+
+// console.log(spiralTraversal([
+//   [1],
+//   [2],
+//   [3],
+//   [4],
+//   [5],
+//   [6],
+//   [7],
+//   [8],
+// ]));
