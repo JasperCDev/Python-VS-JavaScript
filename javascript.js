@@ -3,26 +3,26 @@
 ------------------------------------------------------ */
 
 
-// var string = "string";
-// console.log(string + ' is ' + typeof string);
+var string = "string";
+console.log(string + ' is ' + typeof string);
 
-// var number = 1;
-// console.log(number + ' is ' + typeof number);
+var number = 1;
+console.log(number + ' is ' + typeof number);
 
-// var number = 1.4;
-// console.log(number + ' is ' + typeof number);
+var number = 1.4;
+console.log(number + ' is ' + typeof number);
 
-// var boolean = true;
-// console.log(boolean + ' is ' + typeof boolean);
+var boolean = true;
+console.log(boolean + ' is ' + typeof boolean);
 
-// var array = [];
-// console.log(JSON.stringify(array) + ' is ' + typeof array);
+var array = [];
+console.log(JSON.stringify(array) + ' is ' + typeof array);
 
-// var obj = {};
-// console.log(JSON.stringify(obj) + ' is ' + typeof obj);
+var obj = {};
+console.log(JSON.stringify(obj) + ' is ' + typeof obj);
 
-// var falsey = null;
-// console.log(falsey + ' is ' + null);
+var falsey = null;
+console.log(falsey + ' is ' + null);
 
 
 /*----------------   JAVASCRIPT CONDITIONALS -------------
@@ -74,7 +74,7 @@
 
 // var arr = ['JavaScript', 'Python', 'Jasper', 'Tim', 'Jay'];
 
-// //////////////////////////
+// // //////////////////////////
 // for (var string of arr) {
 //   console.log(string);
 // }
@@ -226,3 +226,26 @@
 // ];
 
 // console.log(rotateMatrix(matrix));
+
+
+/*-------------------NTHFIBONACCI-----------------
+------------------------------------------------*/
+
+
+// var nthFibonacci = function (n, i = 1, current = 1, prev = 0) {
+//   if (n === 0 || n === 1) return n;
+//   if (i === n) return current;
+//   return nthFibonacci(n, i+1, current + prev, current);
+// };
+
+
+// console.log(nthFibonacci(1));
+// console.log(nthFibonacci(2));
+// console.log(nthFibonacci(3));
+// console.log(nthFibonacci(4));
+// console.log(nthFibonacci(5));
+// console.log(nthFibonacci(6));
+// console.log(nthFibonacci(7));
+// console.log(nthFibonacci(8));
+// console.log(nthFibonacci(9));
+// console.log(nthFibonacci(10));

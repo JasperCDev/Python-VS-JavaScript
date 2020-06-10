@@ -1,3 +1,15 @@
+#------------------print-------------------
+
+# print('Hello World')
+
+
+
+
+
+
+#---------------------VARIABLES-----------------------
+# str = 'Hello Hack Reactor'
+# print(str)
 
 # --------------- PYTHON DATA TYPES -------------------
 #------------------------------------------------------
@@ -6,23 +18,23 @@
 # string = "string"
 # print(string + ' is ' + str(type(string)))
 
-# number = 1
-# print(str(number) + ' is ' + str(type(number)))
+# int = 1
+# print(str(int) + ' is ' + str(type(int)))
 
-# decimal = 1.4
-# print(str(decimal) + ' is ' + str(type(decimal)))
+# float = 1.4
+# print(str(float) + ' is ' + str(type(float)))
 
-# boolean = True
-# print(str(boolean) + ' is ' + str(type(boolean)))
+# bool = True
+# print(str(bool) + ' is ' + str(type(bool)))
 
-# array = []
-# print(str(array) + ' is ' + str(type(array)))
+# list = []
+# print(str(list) + ' is ' + str(type(list)))
 
-# object = {}
-# print(str(object) + ' is ' + str(type(object)))
+# dict = {}
+# print(str(dict) + ' is ' + str(type(dict)))
 
-# null = None
-# print(str(null) + ' is ' + str(type(null)))
+# undefined = None
+# print(str(undefined) + ' is ' + str(type(undefined)))
 
 
 #------------------PYTHON CONDITIONALS --------------------
@@ -65,7 +77,7 @@
 
 # inline = 'True' if bool else 'False'
 # print(inline)
-
+# -
 #--------------- PYTHON LOOPS --------------------------
 #-------------------------------------------------------
 
@@ -93,7 +105,7 @@
 #----------------PYTHON FUNCTIONS--------------------------
 #----------------------------------------------------------
 
-#declaration
+# declaration
 # def add(a, b):
 #   return a + b
 
@@ -113,14 +125,14 @@
 #   permutations = []
 #   plays = ['R', 'P', 'S']
 #   def loop(string):
-#     if (len(string) == n):
+#     if len(string) == n:
 #       permutations.append(string)
 #       return
 #     for play in plays:
 #       loop(string + play)
+
 #   loop('')
 #   return permutations
-
 
 # print(rockPaperScissors(3))
 
@@ -200,3 +212,25 @@
 # ]
 
 # print(rotateMatrix(matrix));
+
+
+#--------------NTHFIBONACCI----------------------
+#------------------------------------------------
+
+# def nthFibonacci(n, i = 1, current = 1, prev = 0) :
+#   if n is 0 or n is 1 : return n
+#   if i is n : return current
+#   return nthFibonacci(n, i+1, current + prev, current)
+
+
+# print(nthFibonacci(1))
+# print(nthFibonacci(2))
+# print(nthFibonacci(3))
+# print(nthFibonacci(4))
+# print(nthFibonacci(5))
+# print(nthFibonacci(6))
+# print(nthFibonacci(7))
+# print(nthFibonacci(8))
+# print(nthFibonacci(9))
+# print(nthFibonacci(10))
+
